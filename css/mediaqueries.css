@@ -44,10 +44,51 @@
     }
 
     .content {
+      width: 0rem;
       margin-left: 0rem;
     }
 
+    .popup .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      background: #ffffff;
+      border-radius: 30px;
+      width: 350px;
+      height: 300px;
+      z-index: 2;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+      border-style: dotted;
+      border-width: 1.3px;
+      border-color: #dbd9d9;
+    }
 
+    .content1 {
+      width: 0rem;
+      margin-left: 0rem;
+      margin-top: 2rem;
+    }
+
+    .popup1 .content1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      background: #ffffff;
+      border-radius: 30px;
+      width: 350px;
+      height: 530px;
+      z-index: 2;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+      border-style: dotted;
+      border-width: 1.3px;
+      border-color: #dbd9d9;
+    }
 
     .menu-toggle-btn {
       display: flex;/* Show the toggle button on mobile */
