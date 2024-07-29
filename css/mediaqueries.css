@@ -1,0 +1,82 @@
+@media (max-width: 600px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: absolute; /* Change to absolute for overlay effect */
+      left: -100%; /* Hide off-screen initially */
+      padding: 12px;
+      z-index: 1000; /* Ensure it overlays other content */
+      transition: left 0.3s; /* Smooth slide-in effect */
+    }
+  
+    .sidebar.active {
+      left: 0; /* Slide-in sidebar */
+    }
+
+    .user-details {
+        display: none;
+    }
+
+
+
+    .menu ul {
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    .menu ul li {
+      margin-bottom: 10px;
+    }
+  
+    .menu ul li a {
+      font-size: 16px;
+      justify-content: center;
+    }
+  
+    .main-courses {
+      margin-left: 0; /* No margin when sidebar is hidden */
+    }
+  
+    .section__text__p1 {
+        text-align: center;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .menu-toggle-btn {
+      display: flex;/* Show the toggle button on mobile */
+      background: none;
+      border: none;
+      padding: 10px;
+      font-size: 25px;
+      cursor: pointer;
+      margin-left: 1rem;
+   /* Use fixed positioning for viewport centering */
+      top: 10px; /* Distance from the top of the viewport */
+      left: 50%; /* Center horizontally */
+      transform: translateX(-50%); /* Offset by half of its width */
+      z-index: 1001; /* Above the sidebar */
+    }
+  
+    /* Hide the toggle button when the sidebar is active */
+    .sidebar.active ~ .menu-toggle-btn {
+      display: none; /* Hide the button when sidebar is visible */
+    }
+
+    .main-experience {
+        margin-left: 0rem;
+    }
+    .main-projects {
+        margin-left: 0rem;
+    }
+
+    .main-contact {
+        margin-left: 0rem;
+    }
+
+    .main-about {
+        margin-left: 0rem;
+    }
+  }
