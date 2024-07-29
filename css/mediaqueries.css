@@ -3,21 +3,19 @@
       width: 100%;
       height: auto;
       position: absolute; /* Change to absolute for overlay effect */
-      left: -100%; /* Hide off-screen initially */
+      left: -100%;/* Hide off-screen initially */
       padding: 12px;
       z-index: 1000; /* Ensure it overlays other content */
       transition: left 0.3s; /* Smooth slide-in effect */
     }
   
     .sidebar.active {
-      left: 0; /* Slide-in sidebar */
+      left: 0%; /* Slide-in sidebar */
     }
 
     .user-details {
         display: none;
     }
-
-
 
     .menu ul {
       flex-direction: column;
@@ -44,6 +42,12 @@
     .title {
         text-align: center;
     }
+
+    .content {
+      margin-left: 0rem;
+    }
+
+
 
     .menu-toggle-btn {
       display: flex;/* Show the toggle button on mobile */
